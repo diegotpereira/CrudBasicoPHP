@@ -7,7 +7,7 @@ echo "<div class='container'>";
 
 if (isset($_POST['delete'])) {
     # code...
-    $sql = "DELETE FROM usuarios WHERE usuario_id" .$_POST['usuarioid'];
+    $sql = "DELETE FROM usuarios WHERE usuario_id=" .$_POST['usuarioid'];
 
     if ($con->query($sql) === TRUE) {
         # code...
